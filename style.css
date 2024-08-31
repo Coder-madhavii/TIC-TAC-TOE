@@ -1,0 +1,140 @@
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin:0;
+    padding:0px
+}
+
+
+nav{
+    background-color: rgb(62, 5, 88);
+    color: rgb(238, 242, 245);
+    height: 65px;
+    font-size:27px;
+    display: flex;
+    align-items:center;
+    padding: 0 12px;
+    font-family: 'Alkatra', cursive;
+}
+nav ul{
+    list-style-type:none;
+}
+.gameContainer{
+background-color:rgb(232, 214, 237);
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.container{
+display: grid;
+grid-template-columns: repeat(3,10vw);
+grid-template-rows: repeat(3,10vw);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box{
+    border:2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.box:hover{
+    
+    background-color: rgba(232, 190, 248, 0.858);
+}
+.gameInfo{
+    padding:0 34px;
+   font-family: 'Bebas Neue', cursive;;
+}
+.imgbox img{
+    display: none;
+} 
+.br-0{
+    border-right:0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+   --orange:#F2C14E;
+   --winning-blocks:#2d414b; 
+}
+body{
+    color:var(--orange);
+    font-family: 'Finger Paint',cursive;
+}
+h1{
+    font-size: 54px;
+    text-transform: uppercase;
+}
+.container{
+    padding:40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-color:#37505C ;
+}
+    
+#gameboard{
+    width:450px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 40px;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    
+}
+.box{
+    height:150px;
+    width:150px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:var(--orange);
+    font-size: 8vw;
+    border:2px solid var(--orange);  
+}
+.br-0{
+    border-right:0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+button{
+    padding :10px  20px;
+    border-radius:10px;
+    background-color:var(--orange);
+    color:#333;
+    border-color:var(--orange);
+    font-size:18px;
+    transition:200ms transform;
+    font-weight:600;
+}
+button-hover{
+    cursor:pointer;
+    transform:translateY(2px);
+}
